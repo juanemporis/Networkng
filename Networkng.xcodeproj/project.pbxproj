@@ -16,6 +16,7 @@
 		C85B95BC28457E8E000AD38B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C85B95BB28457E8E000AD38B /* Alamofire */; };
 		C85B95BE28457EFB000AD38B /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B95BD28457EFB000AD38B /* NetworkingProvider.swift */; };
 		C85B95C22845833A000AD38B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B95C12845833A000AD38B /* User.swift */; };
+		C8A90E0D2846D6890052337A /* DateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A90E0C2846D6890052337A /* DateDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C85B95B4284578B3000AD38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85B95BD28457EFB000AD38B /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		C85B95C12845833A000AD38B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C8A90E0C2846D6890052337A /* DateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		C85B95BF284582E9000AD38B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C8A90E0B2846D6790052337A /* Decoder */,
 				C85B95BD28457EFB000AD38B /* NetworkingProvider.swift */,
 			);
 			path = Network;
@@ -89,6 +92,14 @@
 				C85B95C12845833A000AD38B /* User.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C8A90E0B2846D6790052337A /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				C8A90E0C2846D6890052337A /* DateDecoder.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				C85B95A7284578AD000AD38B /* AppDelegate.swift in Sources */,
 				C85B95BE28457EFB000AD38B /* NetworkingProvider.swift in Sources */,
 				C85B95C22845833A000AD38B /* User.swift in Sources */,
+				C8A90E0D2846D6890052337A /* DateDecoder.swift in Sources */,
 				C85B95A9284578AD000AD38B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

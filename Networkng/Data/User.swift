@@ -25,6 +25,7 @@ struct UserResponse : Decodable {
     let meta: Meta?
     let data: User?
 }
+
 struct User : Decodable {
     
     let id : Int?
@@ -32,8 +33,18 @@ struct User : Decodable {
     let email : String?
     let gender : String?
     let status : String?
-    //let create_at: Date?
-    //let update_At: Date?
+    let createdAt: Date?
+    let updatedAt: Date?
+    
+    //Con este codigo podras modificar los nombres de cada uno d elos parametros
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case gender
+        case status
+        case createdAT = "created_at"
+        case ipdatedAT = "updated_at"
+    }
 }
 struct Meta : Decodable {
     

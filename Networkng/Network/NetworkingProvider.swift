@@ -22,11 +22,12 @@ final class NetworkingProvider {
         let url = "\(kBaseUrl)users/\(id)"
         
         //Se hace el llamado al struc UserResponse creado en User
-        AF.request(url, method: .get).validate(statusCode: kStatusOk).responseDecodable (of: UserResponse.self) {
+        AF.request(url, method: .get).validate(statusCode: kStatusOk).responseDecodable (of: UserResponse.self,decoder: DateDecoder()) {
         response in
             
             if let user = response.value?.data {
                 print(user)
+                print(user.createdAt)
             }else {
                 print(response.error?.responseCode ?? "No error")
             }
