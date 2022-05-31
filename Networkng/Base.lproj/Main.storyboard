@@ -24,15 +24,42 @@
                                     <action selector="getUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p9g-hT-HuY"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="605-yz-33u">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1S-2T-wTm">
+                                <rect key="frame" x="20" y="142" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXM-Zo-DkS">
+                                <rect key="frame" x="20" y="201" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TXM-Zo-DkS" secondAttribute="trailing" symbolic="YES" id="18F-cH-ISF"/>
                             <constraint firstItem="3F3-mc-chn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BsK-Uf-FH8"/>
                             <constraint firstItem="3F3-mc-chn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Ies-TV-lHZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m1S-2T-wTm" secondAttribute="trailing" symbolic="YES" id="ap0-KH-LNV"/>
+                            <constraint firstItem="m1S-2T-wTm" firstAttribute="top" secondItem="3F3-mc-chn" secondAttribute="bottom" constant="51" id="gwm-0P-pDV"/>
+                            <constraint firstItem="TXM-Zo-DkS" firstAttribute="top" secondItem="m1S-2T-wTm" secondAttribute="bottom" constant="38" id="hVj-nC-ccw"/>
+                            <constraint firstItem="m1S-2T-wTm" firstAttribute="leading" secondItem="TXM-Zo-DkS" secondAttribute="leading" id="jJ2-uw-2Ik"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3F3-mc-chn" secondAttribute="trailing" constant="16" id="wu0-dV-MIu"/>
+                            <constraint firstItem="m1S-2T-wTm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yeI-XK-Gf5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="605-yz-33u" id="BoL-B1-71x"/>
+                        <outlet property="emailLabel" destination="TXM-Zo-DkS" id="BGT-vm-VFj"/>
+                        <outlet property="nameLabel" destination="m1S-2T-wTm" id="ayU-4o-gzO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
