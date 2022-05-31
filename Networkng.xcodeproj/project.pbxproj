@@ -15,6 +15,7 @@
 		C85B95B3284578B3000AD38B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B95B1284578B3000AD38B /* LaunchScreen.storyboard */; };
 		C85B95BC28457E8E000AD38B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C85B95BB28457E8E000AD38B /* Alamofire */; };
 		C85B95BE28457EFB000AD38B /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B95BD28457EFB000AD38B /* NetworkingProvider.swift */; };
+		C85B95C22845833A000AD38B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B95C12845833A000AD38B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C85B95B2284578B3000AD38B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85B95B4284578B3000AD38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85B95BD28457EFB000AD38B /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		C85B95C12845833A000AD38B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,8 @@
 		C85B95A5284578AD000AD38B /* Networkng */ = {
 			isa = PBXGroup;
 			children = (
+				C85B95C0284582F7000AD38B /* Data */,
+				C85B95BF284582E9000AD38B /* Network */,
 				C85B95A6284578AD000AD38B /* AppDelegate.swift */,
 				C85B95A8284578AD000AD38B /* SceneDelegate.swift */,
 				C85B95AA284578AD000AD38B /* ViewController.swift */,
@@ -67,9 +71,24 @@
 				C85B95AF284578B3000AD38B /* Assets.xcassets */,
 				C85B95B1284578B3000AD38B /* LaunchScreen.storyboard */,
 				C85B95B4284578B3000AD38B /* Info.plist */,
-				C85B95BD28457EFB000AD38B /* NetworkingProvider.swift */,
 			);
 			path = Networkng;
+			sourceTree = "<group>";
+		};
+		C85B95BF284582E9000AD38B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C85B95BD28457EFB000AD38B /* NetworkingProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C85B95C0284582F7000AD38B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C85B95C12845833A000AD38B /* User.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +171,7 @@
 				C85B95AB284578AD000AD38B /* ViewController.swift in Sources */,
 				C85B95A7284578AD000AD38B /* AppDelegate.swift in Sources */,
 				C85B95BE28457EFB000AD38B /* NetworkingProvider.swift in Sources */,
+				C85B95C22845833A000AD38B /* User.swift in Sources */,
 				C85B95A9284578AD000AD38B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
