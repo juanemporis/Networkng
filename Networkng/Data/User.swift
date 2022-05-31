@@ -8,18 +8,33 @@
 import Foundation
 
 //{
-  //"id": 3825,
-  //"name": "Msgr. Marut Jha",
-  //"email": "jha_marut_msgr@zemlak.name",
-  //"gender": "male",
-  //"status": "inactive"
+// "code":200,
+// "meta": null,
+// "data": {
+//"id": 123,
+//"name": "Aatreya Agarwal",
+//"email": "agarwal_aatreya@simonis-aufderhar.name",
+//"gender": "male",
+//"status": "inactive",
 //}
 //}
 
-struct User{
+struct UserResponse : Decodable {
+    
+    let code: Int?
+    let meta: Meta?
+    let data: User?
+}
+struct User : Decodable {
+    
     let id : Int?
     let name : String?
     let email : String?
     let gender : String?
     let status : String?
+    //let create_at: Date?
+    //let update_At: Date?
+}
+struct Meta : Decodable {
+    
 }

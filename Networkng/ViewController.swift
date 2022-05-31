@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         
         
     }
-
+    
+    @IBAction func getUserAction(_ sender: Any) {
+        //Se pasa el id del usuario que queremos consultar
+        NetworkingProvider.shared.getUser(id: 123)
+    }
+    
 }
 
